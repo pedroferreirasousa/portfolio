@@ -1,0 +1,284 @@
+@media screen and (max-width: 1400px ) {
+
+/*NAV E INTRODUÇÃO */
+
+    header ul{
+        gap: 0px;
+    }
+    .navlist li a{
+        padding: 5px 10px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .title-aboutme h2{
+        font-size: 18px;
+    }
+
+    .titleinfo h3{
+        font-size: 16px;
+    }
+
+    /* SOBRE MIM */
+    
+    .maininfo-container p{
+        font-size: 14px;
+    }
+
+    .content-personalinfo ul li{
+        font-size: 12px;
+    }
+
+    .container-aboutme h2{
+        font-size: 18px;
+    }
+
+    .container-aboutme h3{
+        font-size: 16px;
+    }
+
+
+    /* HABILIDADES */
+
+    .container-skills{
+        width: 85vw;
+    }
+
+    .container-skills ul li img{
+        width: 80px;
+    }
+
+
+
+
+    /* PROJETOS */
+
+    .container-projects{
+        width: 85vw;
+    }
+
+    .project{
+        margin-top: 20px;
+    }
+
+    .project img{
+        width: 230px;
+    }
+
+    }
+
+
+    @media screen and (max-width: 1110px ){
+        /*SOBRE MIM */
+
+        .maininfo-container p{
+            font-size: 12px;
+        }
+    }
+
+
+    @media screen and (max-width: 1050px ) {
+
+        .navlist{
+            display: none;
+        }
+
+        .btn-wpp{
+            z-index: 100;
+        }
+
+        #mobile-btn{
+            display: block;
+        }
+        
+        .maininfo-container-aboutme p{
+            font-size: 14px;
+        }
+
+
+        .project{
+          
+        }
+
+        .project h3{
+            font-size: 14px;
+        }
+
+        .project img{
+            width: 200px;
+        }
+
+        /* CONTATO */
+
+        .container-contact{
+            width: 85vw;
+        }
+
+        .container-contact-left h3{
+            font-size: 18px;
+        }
+
+        .container-contact-left p{
+            font-size: 15px;
+        }
+
+
+        .container-contact-right img{
+            width: 350px;
+        }
+    
+
+        }
+
+        @media screen and (max-width: 820px ){
+            .maininfo-container p{
+                font-size: 12px;
+            }
+            .container-aboutme h2{
+                font-size: 15px;
+                letter-spacing: 0px;
+            }
+        
+            .container-aboutme h3{
+                font-size: 13px;
+            }
+
+            .container-aboutme{
+                width: 80vw;
+            }
+
+            .container-skills{
+                width: 90vw;
+            }
+
+            .container-projects{
+                width: 90vw;
+            }
+
+            .container-contact{
+                width: 80vw;
+            }
+        
+        }
+
+        @media screen and (max-width: 713px ){
+
+            /* btn whatsapp */
+
+        .btn-wpp a img{
+            width: 40px;
+        }
+
+        /* HOME */
+
+        .container-home h1{
+            font-size: 22px;
+        }
+
+        .btn-socials a{
+            font-size: 15px;
+        }
+
+        .btn-contact a{
+            font-size: 15px;
+        }
+
+        /* SOBRE */
+
+        .maininfo-container{
+            padding: 40px 20px;
+        }
+
+        .maininfo-container p{
+            font-size: 11px;
+        }
+
+        .container-aboutme-img{
+                min-width: 130px;
+            }
+                    /* projetos */
+
+        .project a img{
+            width: 180px;
+        }
+        .project h3{
+            font-size: 13px;
+        }
+
+        .more-projects a{
+            font-size: 16px;
+        }
+
+        }
+
+        @media screen and (max-width: 640px ){
+
+            /* SOBRE MIM */
+
+            .maininfo-container p{
+                font-size: 10px;
+            }
+
+            .container-projects-grid{
+                grid-template-columns: 1fr 1fr;
+            }
+
+            /* HABILIDADES*/
+
+            .container-skills ul li img{
+                width: 70px;
+            }
+
+
+            /* PROJETOS */
+
+            .project a img{
+                width: 200px;
+            }
+
+            /* CONTATO */
+
+            .container-contact-right img{
+                width: 200px;
+            }
+        }
+
+        @media screen and (max-width: 580px ){
+
+            /* PROJETO */
+
+
+
+            /*CONTATO */
+            .container-contact-right{
+                display: none;
+                width: 0;
+            }
+            .container-contact-left{
+                width: 100%;
+            }
+
+            .adress-box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .contact-box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        @media screen and (max-width: 450px ){
+            .project a img{
+                width: 100px;
+            }
+        }
+    
+

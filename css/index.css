@@ -1,0 +1,476 @@
+body{
+    color: #dedede;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.containervideobg{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #03011f70;
+}
+.galaxybackground{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* header and home section */
+
+header{
+    z-index: 2;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 8vh;
+    background-color: #0000008c;
+    backdrop-filter: blur(20px);
+
+}
+
+.containerheader{
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+}
+
+header h1{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+header h1 span{
+    color: rgb(21, 170, 216) ;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.btn-wpp{
+    position: fixed;
+    top: 90vh;
+    right: 2vw;
+}
+
+.btn-wpp a img{
+    width: 55px;
+    transition: 0.7s;
+}
+
+.btn-wpp a img:hover{
+    transform: scale(1.3);
+}
+/* navbar */
+
+.navlist li a{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+}
+
+.navlist li a:hover{
+    color: rgb(21, 170, 216);
+    font-size: 16px ;
+}
+
+/* mobile menu */
+
+#mobile-btn{
+    background: transparent;
+    cursor: pointer;
+    position: fixed;
+    right: 10vw;
+    border: 0px;
+    display: none;
+}
+
+.line-btn{
+    width: 30px;
+    height: 4px;
+    background-color: #dedede;
+    display: block;  
+    margin: 3px auto;
+    transition: 0.4s;
+}
+
+ .navlist-mobile{
+    background: #000000f1;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    width: 100vw;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    transition: 0.5s;
+    overflow: hidden;
+ }
+
+ .navlist-mobile li a{
+    color: #dedede;
+    text-decoration: none;
+    display: block;
+    padding: 5vh 100vw;
+ }
+
+ .navlist-mobile li a:hover{
+    color: rgb(21, 170, 216);
+ }
+
+.home-wrapper{
+    width: 100vw;
+    height: 92vh;   
+    margin-top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.home-wrapper h1{
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.home-wrapper h1 span{
+    color: rgb(21, 170, 216);
+}
+
+.container-home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 92vh;
+    width: 100vw;
+}
+
+.btn-socials{
+    width: 450px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-socials a{
+    border: 1px solid rgb(21, 170, 216);
+    padding: 10px 20px;
+    text-shadow: 1px 1px 1px rgb(53, 139, 173);
+    border-radius: 20px;
+}
+
+.btn-socials a:hover{
+    background-color: rgb(21, 170, 216);
+    border: 1px solid rgb(13, 81, 207);
+    text-shadow: 1px 1px 1px rgb(13, 81, 207);
+}
+
+.btn-contact a{
+    letter-spacing: 2px;
+    border: 1px solid rgb(21, 170, 216);
+    padding: 10px 20px;
+    border-radius: 2rem;
+}
+
+.btn-contact a:hover{
+    background-color: rgb(21, 170, 216);
+}
+
+.invite {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Seçao Sobre  */
+
+.aboutme-wrapper{
+    height: 100vh;
+    background-color: #131212;
+    display: flex;
+    justify-content: center;
+    padding-top: 8vh;
+    width: 100vw;
+}
+
+.container-aboutme{
+    max-width: 1000px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.container-aboutme-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10vw ;
+    min-width: 150px;
+    padding-top: 20px;
+}
+
+.container-aboutme-img img{
+    width: 100%;
+    border: 4px solid rgb(21, 170, 216);
+    border-radius: 500px;
+    transition: 0.7s;
+}
+.container-aboutme img:hover{
+    transform: scale(1.1);
+}
+
+
+.container-aboutme h2{
+    color: rgb(21, 170, 216);
+    letter-spacing: 3px;
+}
+
+
+.maininfo-container{
+    width: 100%;  
+    max-width: 1000px;
+    border-left: 4px solid rgb(21, 170, 216);
+    background-color: #18181a;
+    padding: 40px 60px;
+    border-radius: 1.1rem;
+}
+
+.personalinfo-container-aboutme{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content-personalinfo{
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 3px solid rgb(21, 170, 216);
+}
+/* Seção habilidades */
+
+.skills-wrapper{
+    height: 100vh;
+    background-color: #18181a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8vh;
+    width: 100vw;
+}
+
+.skills-wrapper p{
+    color: rgba(57, 110, 146, 0.712);
+}
+
+.container-skills{  
+    width: 70vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px 50px 20px;
+}
+
+.skills-wrapper h2{
+    color: rgb(21, 170, 216);
+    letter-spacing: 3px;
+}
+
+.container-skills ul{
+    font: 1em sans-serif;
+    display: flex;
+    justify-content: space-around   ;
+}
+
+.container-skills ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+}
+
+.container-skills ul li img{
+    width: 100px;
+    background-color: #dedede1c;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.list-skill-1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-skill-2{
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Seção Projetos */
+
+.projects-wrapper{
+    height: 100vh;
+    background-color: #131212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8vh;
+    width: 100vw;
+}
+
+.container-projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 70vw;
+    max-width: 1000px;
+}
+
+.projects-wrapper h2{
+    color: rgb(21, 170, 216);
+    letter-spacing: 3px;
+}
+
+.container-projects-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.project img{
+    width: 280px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #dedede;
+}
+
+.project p{
+    font-size: 10px;
+}
+
+.project img:hover{
+    transform: scale(1.1);
+    transition: all 0.6s;
+}
+
+.btn-project{
+display: flex;
+gap: 20px;
+justify-content: flex-start;
+}
+
+.btn-project a{
+    border-radius: 10px;
+}
+
+.more-projects a{
+    background-color: rgb(21, 170, 216);
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 6px;
+
+}
+
+
+
+/* Seção Contato */
+
+.contactme-wrapper{
+    height: 92vh;
+    background-color: #18181a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8vh;
+    width: 100vw;
+}
+
+.contactme-wrapper h2{
+    color: rgb(21, 170, 216);
+    letter-spacing: 3px;
+}
+
+.container-contact{
+    width: 70vw;
+    max-width: 1000px;
+    height: 40vh;
+    display: flex;
+}
+
+.container-contact-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-contact-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-contact-right img{
+    width: 500px;
+}
+
+.contact-box i{
+    margin-right: 10px;
+}
+
+
+
+
+footer{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #dedede;
+    height: 8vh;
+    background-color: #131212;
+}

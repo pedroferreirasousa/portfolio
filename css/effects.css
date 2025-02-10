@@ -1,0 +1,151 @@
+
+.hidden {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-100%);
+    transition: opacity 1.2s, transform 1.2s, filter 1.2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+    transition: opacity 1.2s, transform 1.2s, filter 1.2s;
+}
+
+/* Animação para a introdução */
+.hidden-inicial {
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: slideInicial 1s forwards;
+    animation-delay: 0.5s; 
+}
+
+/* Animação para os botões */
+.btn-socials a {
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: slideInicial 1s forwards;
+}
+
+.btn-socials a:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.btn-socials a:nth-child(2) {
+    animation-delay: 1.3s;
+}
+
+.btn-socials a:nth-child(3) {
+    animation-delay: 1.6s;
+}
+
+.btn-contact a {
+    opacity: 0;
+    transform: translateX(-50%);
+    animation: slideInicial 1s forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes slideInicial {
+    0% {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+/* Estilo inicial do elemento */
+
+
+/* Delay para os elementos da classe .list-skill-1 */
+.list-skill-1 :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.list-skill-1 :nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.list-skill-1 :nth-child(4) {
+    transition-delay: 800ms;
+}
+.list-skill-1 :nth-child(5) {
+    transition-delay: 1000ms;
+}
+
+/* Delay para os elementos da classe .list-skill-2 */
+.list-skill-2 :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.list-skill-2 :nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.list-skill-2 :nth-child(4) {
+    transition-delay: 800ms;
+}
+
+.list-skill-2 :nth-child(5) {
+    transition-delay: 1000ms;
+}
+
+/* hover section active */
+
+.navlist li a.active {
+    color: rgb(21, 170, 216);
+    font-weight: 600;
+  }
+  
+  .navlist li a.active:hover {
+    color: rgb(13, 81, 207);
+}
+
+
+
+/*  */
+
+#mobile-btn{
+}
+
+#mobile-btn.activeMobileBtn .line-btn:nth-child(1){
+    transform: translateY(6.5px) rotate(-45deg);
+}
+#mobile-btn.activeMobileBtn .line-btn:nth-child(2){
+    width: 0;;
+}
+
+#mobile-btn.activeMobileBtn .line-btn:nth-child(3){
+    transform: translateY(-6.5px) rotate(45deg);
+}
+
+#navlist-mobile.activeNav{
+    visibility: visible;
+    height: 92vh;
+}
+
+
+
+
+/* efeitos na barra de scrool */
+
+body::-webkit-scrollbar{
+    width: 9px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: #000000;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(21, 170, 216);
+    border-radius: 100px;
+}
+
+      
